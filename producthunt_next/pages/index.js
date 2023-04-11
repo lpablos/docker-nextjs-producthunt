@@ -1,20 +1,21 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import React from 'react';
+import Layout from '../components/layout/Layout';
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
-  return (
+const Home = () => {
+  return ( 
     <div>
-      <h1>Iinicio</h1>
-      <style jsx>
-      {`
-        h1{
-          color:red;
-        }
-      
-      `}
-      </style>
+      <Layout>
+        <h1>Iinicio</h1>
+        <style jsx>
+          {`
+            h1{
+              color:red;
+            }          
+          `}
+        </style>
+      </Layout>
     </div>
-  )
+   );
 }
+ 
+export default Home;
