@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    image: lpablo
+    container_name: nextjs
+    restart: unless-stopped
+    tty: true
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports: 
+      - 3001:3000
+    volumes:
+      - ./:/app/
