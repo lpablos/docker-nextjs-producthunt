@@ -45,6 +45,9 @@ const SectionUser = styled.p`
 const SectionNavegacion= styled.div`
     display: flex;
     align-items: center;
+    a { 
+        text-decoration: none !important;
+    }
 `;
 const Header = () => {
 
@@ -72,12 +75,12 @@ const Header = () => {
                         </>
                     ):(
                         <>
-                            <Link href="/">
+                            <Link href="/login">
                                 <Botton bgColor="true">
                                     Iniciar Sessión
                                 </Botton>
                             </Link>
-                            <Link href="/">
+                            <Link href="/crear-cuenta">
                                 <Botton>
                                 Crear Cuenta
                                 </Botton>
