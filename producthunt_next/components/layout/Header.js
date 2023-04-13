@@ -36,6 +36,9 @@ const Logo = styled.p`
 const SectionLogin = styled.div`
     display: flex;
     align-items: center;
+    a {
+        text-decoration: none;
+    }
 `;
 
 const SectionUser = styled.p`
@@ -51,7 +54,7 @@ const SectionNavegacion= styled.div`
 `;
 const Header = () => {
 
-    const usuario = true;
+    const usuario = false;
 
     return ( 
         <DivHeader>
